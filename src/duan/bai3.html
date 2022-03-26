@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+.leftcolumn { 
+  float: left;
+  width: 75%;
+}
+#menu ul{
+list-style-type:none;
+padding:0px;
+margin:0px;
+}
+#menu ul li{
+display:inline;
+}
+ 
+#menu ul a{
+text-decoration:none;
+width:156px;
+height: 40px;
+float:left;
+background: #21409a ;
+color:#fff200;
+font-weight:bold;
+text-align:center;
+line-height:35px;
+border-left:1px solid #fff;
+}
+.sptb{
+    height: 40px;
+    margin-top: 5px;
+    background: #21409a;
+}
+.sptb p{
+   color: #fff200;
+   margin-top: 0px;
+   font-weight: bold;   
+   line-height: 35px;
+   font-size: 1.7rem;
+   width: 1060px;
+}
+.sptb  .card{
+    width: 330px;
+    height: 325px;
+    text-align: center;
+    background-color:#f5f5f5;
+    border: 1px solid #21409a;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+.sptb .card img{
+    width: 35px;
+    width: 100%;
+    height: 193px;
+	object-fit: cover;
+}
+.sptb .card h1{
+    color:#21409a;
+    font-size: 1.5rem;
+    font-weight: bold;   
+
+
+}
+.sptb .card h2{
+    color: red;
+    font-size: 1.5rem;
+}
+.sptb .bt1{
+    width: 70px;
+    height: 30px;
+    background-color:#21409a;
+    color: #fff200;
+    font-weight: bold;
+}
+.sptb .bt2{
+    width: 70px;
+    height: 30px;
+    background-color:#fff;
+    border: 1px solid #21409a;
+    color: #21409a;
+    font-weight: bold;
+}
+
+
+/* Cột phải */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+.rightcolumn .card-1{
+    margin-top: 15px;
+    height: 360px;
+    width: 320px;
+    background: #21409a;
+    color: #fff200;
+   font-weight: bold;   
+   line-height: 35px;
+   float: left;
+}
+.rightcolumn .card-2{
+    margin-top: 20px;
+    height: 300px;
+    width: 320px;
+    background: #21409a;
+    color: #fff200;
+   font-weight: bold;   
+   line-height: 35px;
+   float: left;
+}
+.rightcolumn .card-2 .p1{
+    background: #d49b4a;
+    color: #333;
+    font-weight: bold;   
+}
+.rightcolumn .card-3{
+    margin-top: 20px;
+    height: 300px;
+    width: 320px;
+    background: #21409a;
+    color: #fff200;
+   font-weight: bold;   
+   line-height: 35px;
+   float: left;
+}
+#menu1 ul {
+  background: #d49b4a;
+  width: 320px;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+}
+#menu1 li {
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ab8543;
+  padding: 0 1em;
+}
+#menu1 li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+}
+#menu1 li:hover {
+  background: #ab8543;
+}
+/* Clear float khác sau các cột */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #21409a;
+  margin-top: 10px;
+  color: #fff200;
+  text-align: left;
+}
+
+/* Bố cục linh hoạt: các cột xếp chồng lên nhau thay vì cạnh nhau khi màn hình 
+có chiều rộng dưới 700px */
+@media screen and (max-width: 700px) {
+  .leftcolumn, .rightcolumn { 
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Bố cục linh hoạt: Thanh menu điều hướng xếp chồng lên nhau thay vì cạnh nhau
+khi màn hình có chiều rộng dưới 300px  */
+@media screen and (max-width: 300px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="row">
+   <div class="rightcolumn">
+       <div class="image">
+           <img src="https://nhadep.com.vn/Uploads/images/banner/thuong-hieu-thuoc-TCTGROUP/noi-that-nha-dep.png" alt="" style="width: 320px; height: 100px;">
+       </div>
+       <div class="card-1">
+            <div class="dmsp">
+            <p style="font-size: 1.7rem;"> &emsp; &triangleright;  Danh mục sản phẩm</p>
+            </div>
+            <div id="menu1">
+                <ul>
+                  <li><a href="#">&triangleright;&ensp;Nội thất sô pha phòng khách</a></li>
+                  <li><a href="#">&triangleright;&ensp;Nội thất phòng bếp</a></li>
+                  <li><a href="#">&triangleright;&ensp;Nội thất phòng trẻ em</a></li>
+                  <li><a href="#">&triangleright;&ensp;Nội phóng phòng ngủ</a></li>
+                  <li><a href="#">&triangleright;&ensp;Nội thất trẻ em</a></li>
+                  <li><a href="#">&triangleright;&ensp;Nội thất kệ tivi</a></li>
+                  <li><a href="#">&triangleright;&ensp;Nội thất giá sách</a></li>
+                  <li><a href="#">&triangleright;&ensp;Nội thất tủ hồ sơ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="card-2">
+            <div class="tktc">
+                <p style="font-size: 1.7rem;"> &emsp; &triangleright;  Thống kê truy cập</p>
+                <div class="p1">
+                <p> &emsp;<i class="glyphicon glyphicon-user"> Hôm nay.................................. 3</i></p>
+                <p> &emsp;<i class="glyphicon glyphicon-user"> Hôm qua.................................. 3</i></p>
+                <p> &emsp;<i class="glyphicon glyphicon-user"> Tuần này................................. 235</i></p>
+                <p> &emsp;<i class="glyphicon glyphicon-user"> Tuần trước............................... 303</i></p>
+                <p> &emsp;<i class="glyphicon glyphicon-user"> Tháng này................................ 249</i></p>
+                <p> &emsp;<i class="glyphicon glyphicon-user"> Tháng trước............................. 1110</i></p>
+                </div>
+            </div>
+        </div>
+        <div class="card-3">
+            <p style="font-size: 1.7rem;"> &emsp; &triangleright;  Quảng cáo</p>
+            <img src="https://nhadep.com.vn/Uploads/images/Du-an-da-thuc-hien/Noi%20that%20nha%20dep%20uu%20dai%20thang%201.jpg"  alt="" style="width:320px; height: 300px;">
+
+
+        </div>
+    </div>
+  <div class="leftcolumn">
+    <div id="menu">
+        <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Giới thiêụ</a></li>
+        <li><a href="#">Sản phẩm</a></li>
+        <li><a href="#">Bảo hành</a></li>
+        <li><a href="#">Tư vấn</a></li>
+        <li><a href="#">Khuyến mãi</a></li>
+        <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </div>
+    <img src="https://nhadep.com.vn/Uploads/images/FB_UuDaiThang5-15.jpg" alt="" style="width: 1095px; height: 400px;">
+    <div class="sptb">
+        <p> &emsp; &triangleright; Sản phẩm tiêu biểu</p>
+    <div class="card">
+        <h1>Giường ngủ 1.8x2m</h1>
+        <img src="https://nhadep.com.vn/Uploads/images/san-pham-furniture/giuong-ngu-nguoi-lon/giuong.jpg" alt="">
+        <h2>7.000.000 VNĐ</h2>
+        <button class="bt1">Chi tiết</button>
+        <button class="bt2">Ảnh lớn</button>
+    </div>
+    <div class="card">
+        <h1>Giường ngủ 1.8x2m</h1>
+        <img src="https://nhadep.com.vn/Uploads/images/%E1%BA%A2nh%20kh%C3%A1c/Blog%20T%C6%B0%20V%E1%BA%A5n/Sofa%204.jpg" alt="">
+        <h2>7.000.000 VNĐ</h2>
+        <button class="bt1">Chi tiết</button>
+        <button class="bt2">Ảnh lớn</button>
+    </div>
+    <div class="card">
+        <h1>Giường ngủ 1.8x2m</h1>
+        <img src="https://nhadep.com.vn/Uploads/images/%E1%BA%A2nh%20kh%C3%A1c/T%E1%BB%A7%20B%E1%BA%BFp%20(11).jpg" alt="">
+        <h2>7.000.000 VNĐ</h2>
+        <button class="bt1">Chi tiết</button>
+        <button class="bt2">Ảnh lớn</button>
+    </div>
+    <div class="card">
+        <h1>Giường ngủ 1.8x2m</h1>
+        <img src="https://nhadep.com.vn/Uploads/images/Anh-du-an/Chung-cu/Thiet-ke-noi-that-chung-cu/Florence/19b641adea03165d4f12.jpg" alt="">
+        <h2>7.000.000 VNĐ</h2>
+        <button class="bt1">Chi tiết</button>
+        <button class="bt2">Ảnh lớn</button>
+    </div>
+    <div class="card">
+        <h1>Sofa vải Libby 4 chỗ</h1>
+        <img src="https://nhadep.com.vn/Uploads/images/san-pham-furniture/sofa-vai/DSC05453.jpg" alt="">
+        <h2>7.000.000 VNĐ</h2>
+        <button class="bt1">Chi tiết</button>
+        <button class="bt2">Ảnh lớn</button>
+    </div>
+    <div class="card">
+        <h1>Giường ngủ 1.8x2m</h1>
+        <img src="https://nhadep.com.vn/Uploads/images/Du-an-da-thuc-hien/du%20an%20ocean%20park.jpg" alt="">
+        <h2>7.000.000 VNĐ</h2>
+        <button class="bt1">Chi tiết</button>
+        <button class="bt2">Ảnh lớn</button>
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+<div class="footer">
+  <p>Địa chỉ: 22 đường Trần Hưng Đạo, thành phố Đồng Hới, tỉnh Quảng Bình.</p>
+  <p>Điện thoại: 0123456789</p>
+  <p>Email: lttbinh.20it2@vku.udn.vn</p>
+</div>
+
+</body>
+</html>

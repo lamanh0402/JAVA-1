@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bài 1</title>
+</head>
+<body>
+<style>
+* {
+  box-sizing: border-box;
+}
+span{
+    color: rgb(2, 46, 2);
+}
+
+body {
+  font-family:'Courier New', Courier, monospace;
+  background: white;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 20px;
+  background: white;
+  height: 120px;
+}
+.header .image {
+ float: left;
+ height: 90px;
+}
+.header .headernav{
+float: right;
+}
+.header .headernav li {
+ display: inline;
+ font-size: 0.8rem;
+ color: green;
+}
+.header .headernav button{
+    color: green;
+    float: left;
+    font-size: 12px;
+    margin-top: 8px;
+    text-align: center;
+    padding: 8px 15px;
+    margin-left: 3px;
+    border: 5px;;
+
+}
+
+
+
+/* Style the top navigation bar */
+.topnav {
+  margin-top: 0.5rem;
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: white;
+  padding-top: 10px;
+  
+}
+.rightcolumn .li-tinnong{
+  float: left;
+  width: 5%;
+}
+.rightcolumn .tinnong{
+  float: left;
+  width: 95%;
+  color: green;
+  font-size: 12px;
+
+}
+.rightcolumn .li-tinnong li{
+    display:block;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 10px solid green;
+    border-bottom: 5px solid transparent;
+    
+}
+.rightcolumn .card-col {
+    background-color: white;
+    height: 500px;
+    width: 300px;
+}
+.rightcolumn .card-col img {
+    height: 150px;
+    width: 280px;
+    border: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+
+.leftcolumn .card {
+  background-color:white;
+  padding: 10px;
+  height: 400px;
+}
+
+
+/* Fake image */
+.leftcolumn .image {
+  float: left;
+  width: 35%;
+  height: 280px;
+  width: 300px;
+  padding-top: 5px;
+}
+.leftcolumn .tieude {
+    float: left;
+    width: 65%;
+    padding: 10px;
+    padding-top: 5px;
+
+}
+.leftcolumn .tieude span{
+    color: green;
+    font-size: 20px;
+}
+.leftcolumn .col{
+    background-color:#ddd;
+    height: 120px;
+    width: 88%;
+}
+.leftcolumn .col img{
+    width: 155px;
+    height: 110px;
+    float: left;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.leftcolumn .loaitintuc{
+    height: 300px;
+    padding-left:10px ;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 90px;
+}
+.footer .footer-left{
+    float: left;
+    text-align: left;
+    height: 90px;
+}
+.footer .footer-nav{
+    float: right;
+}
+.footer li {
+ display: inline;
+ font-size: 1rem;
+ color: green;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <div class="image">
+       <img src="https://img.icons8.com/dusk/64/000000/v-live.png"/>
+        <p style="color: green;"><span> Hotline:</span>tintuc@gmail.com</p>
+    </div>
+    <ul class="headernav">
+        <li href="#">Tin tức online |</li>
+        <li href="#">InfoNet |</li>
+        <li href="#">IctNews |</li>
+        <li href="#">Tuyển dụng |</li>
+        <li href="#">Giải trí |</li> <br>
+        <input type="text" style="width: 180px; height: 28px; float:left; margin-top: 10px;">
+        <button>Search</button>
+        <img src="https://img.icons8.com/plasticine/100/000000/wifi.png" style="height: 40px; float: left; margin-top: 2.5px;"/>
+        <img src="https://img.icons8.com/dusk/64/26e07f/facebook-new--v2.png" style="height: 30px; float: left; margin-top: 7px;"/>
+    </ul>
+</div>
+<div class="topnav">
+    <a href="#">Xã hội  &emsp;  |</a>
+    <a href="#"> Giáo dục  &emsp;  |</a>
+    <a href="#">Kinh doanh &emsp;   |</a>
+    <a href="#">Công nghệ   &emsp; |</a>
+    <a href="#">Giải trí  &emsp;  |</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style="color: green;;">Tin mới nhất</h2> <hr>
+      <img class="image"  src="https://image.thanhnien.vn/660x370/uploaded/duytinh/2021_05_20/banhcanhothanh_pdnq.jpg" alt="">
+      <div class="tieude">
+          <span>Một gia đình 3 người nhiễm Covid-19 ở tp.HCM</span>
+          <p>Điều tra ban đầu đã xác định 15 trường hợp tiếp xúc gần tại nơi ở của bệnh nhân T. Kết quả xét nghiệm khẩn 15 trường hợp này, HCDC đã xác định thêm 2 trường hợp dương tính là 2 người con sống cùng nhà của bệnh nhân T. ở hẻm 287 Nguyễn Đình Chiểu.Qua điều tra dịch tễ, ngày 19.5, bệnh nhân T. có triệu chứng bệnh đường hô hấp, đến khám tại Trung Tâm Medic, có kết quả xét nghiệm X-quang phổi và CT scanner phổi có tổn thương.Bệnh nhân T. được hướng dẫn đến khám tại Bệnh viện Phạm Ngọc Thạch chiều cùng ngày. Sau khi tiếp nhận thông tin, TP.HCM tiến hành các biện pháp phòng chống dịch. Thực hiện điều tra, truy vết các trường hợp tiếp xúc, khoanh vùng phong tỏa tạm thời các địa điểm liên quan đến trường hợp này. Điều tra ban đầu, HCDC đã truy vết 15 trường hợp tiếp xúc gần tại nơi ở và chuyển cách ly lấy mẫu xét nghiệm khẩn.
+          </p>
+      </div>
+    </div>
+    <div class="col">
+        <div class="img">
+           <img src="https://image.thanhnien.vn/400x300/uploaded/vithao/2021_05_20/phong_toa_vo_van_tan5_gbwv.jpg" alt="">
+        </div>
+        <div class="img">
+        <img src="https://image.thanhnien.vn/400x300/uploaded/tamnm/2021_05_11/thumb-top3-le-van-sy-16207402272461531910895_imrq.jpg" alt="">
+        </div>
+        <div class="img">
+        <img src="https://image.thanhnien.vn/400x300/uploaded/vuphuong/2021_05_20/hoa-hao15_wioc.jpg" alt="">
+        </div>
+        <div class="img">
+        <img src="https://images.dable.io/ad/thumbnails/legacy-resize/210516035900548/2x/16by10" alt="">
+        </div>
+        <div class="img">
+        <img src="https://image.thanhnien.vn/uploaded/lienchau/2021_05_20/xe-van-chuyen-tno_jmnw.gif" alt="">
+        </div>
+        <div class="img">
+            <img src="https://image.thanhnien.vn/400x300/uploaded/tuyenth/2021_05_10/1_gacy.jpeg" alt="">
+        </div>
+    </div>   
+    <div class="loaitintuc">
+        <h2 style="color: green;;">Loại tin tức<hr></h2>
+        <strong>07/05/2018</strong>
+        <p style="color: green;">Tiêu để theo loại tin tức</p>
+        ................................................................................................
+        <br>  <br><strong>20/9/2018</strong>
+        <p style="color: green;">Tiêu để theo loại tin tức, tiêu đê theo loại tin tức, tiêu đề theo loại tin tức</p>
+        ................................................................................................
+    </div>
+    </div>
+  
+    <div class="rightcolumn">
+      <h2 style="color: green;">Tin nóng</h2><hr>
+       <div class="li-tinnong">
+           <li></li> <br>
+           <li></li> <br>
+           <li></li> <br>
+           <li></li> <br>
+           <li></li> <br>
+           <li></li> <br>
+       </div>
+       <div class="tinnong">
+       <a>Tin nóng 1</a> <br> <br>
+       <a>Tin nóng 2</a> <br><br>
+       <a>Tin nóng 3</a> <br><br>
+       <a>Tin nóng 4</a> <br><br>
+       <a>Tin nóng 5</a> <br><br>
+       <a>Tin nóng 6</a> <br> <br>
+       </div>  
+
+    <div class="right-col">
+       <h2 style="color: green;">Quảng Cáo</h2><hr>
+      <div class="card-col">
+        <div class="img">
+           <img src="https://image.thanhnien.vn/400x300/uploaded/vithao/2021_05_20/phong_toa_vo_van_tan5_gbwv.jpg" alt="">
+        </div>
+        <div class="img">
+        <img src="https://image.thanhnien.vn/400x300/uploaded/tamnm/2021_05_11/thumb-top3-le-van-sy-16207402272461531910895_imrq.jpg" alt="">
+        </div>
+        <div class="img">
+        <img src="https://image.thanhnien.vn/400x300/uploaded/vuphuong/2021_05_20/hoa-hao15_wioc.jpg" alt="">
+        </div>
+      </div>
+    </div>  
+  </div>
+</div>
+<div class="footer">
+    <hr>
+    <div class="footer-left">
+        <strong>Tên công ty</strong> <br>
+        <strong>Địa chỉ: 123 abc, phường X, quận Y, Tp.Z</strong> <br>
+        <strong>Điện thoại 0123.456789</strong> <br>
+        <strong style="color: green;">Email:tintuc@gmail.com</strong>
+    </div>
+    <ul class="footer-nav">
+        <li href="#">Tin tức online |</li>
+        <li href="#">InfoNet |</li>
+        <li href="#">IctNews |</li>
+        <li href="#">Tuyển dụng |</li>
+        <li href="#">Giải trí |</li> <br>
+        <strong>Copyright@2018 Tên công ty</strong>
+    </ul>
+</div>
+
+</body>
+</html>
